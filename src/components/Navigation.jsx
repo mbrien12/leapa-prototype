@@ -1,16 +1,34 @@
 import React, { Component } from "react";
 
-import { Menu } from "semantic-ui-react";
+import { Icon, Menu, Segment } from "semantic-ui-react";
 
 export default class Navigation extends Component {
+  state = { activeItem: 'home' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
+    const { activeItem } = this.state
+
     return (
-          <Menu secondary stackable size="massive">
-            <Menu.Item
-              name="log in"
-              position = "right"
-            />
-          </Menu>
-    );
+      <Segment inverted>
+        <Menu inverted pointing secondary>
+        <Icon name='lemon' size='big' />
+        <Menu.Menu position="right">
+          <Menu.Item
+            name='profile'
+            active={activeItem === 'profile'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='log out'
+            active={activeItem === 'log out'}
+            onClick={this.handleItemClick}
+
+          />
+          </Menu.Menu>
+        </Menu>
+      </Segment>
+    )
   }
 }

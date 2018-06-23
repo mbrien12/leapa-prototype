@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProfileDetails from "./ProfileDetails"
+import AddTrackButton from "./AddTrackButton"
 import '../../css/Profile.css';
 
 export default class Profile extends Component {
@@ -10,7 +11,7 @@ export default class Profile extends Component {
           <ProfileDetails />
         </div>
         <div className="profile-right-two-thirds">
-          <h2>Profile right</h2>
+          <AddTrackButton/>
         </div>
       </div>
     );

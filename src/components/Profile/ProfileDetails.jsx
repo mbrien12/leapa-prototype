@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Button, Card, Icon, Image, Label } from 'semantic-ui-react'
 import '../../css/Profile.css';
 
 export default class ProfileDetails extends Component {
@@ -15,10 +15,15 @@ export default class ProfileDetails extends Component {
         <Card.Description>Sarah is learning <a href="#">HTML</a>, <a href="#">CSS</a> and <a href="#">Digital Marketing</a></Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
-          <Icon name='star' />
-          22 Followers
-        </a>
+      <Button as='div' labelPosition='right'>
+      <Button icon>
+        <Icon name='star' />
+        Follow
+      </Button>
+      <Label as='a' basic pointing='left'>
+        22
+      </Label>
+    </Button>
       </Card.Content>
     </Card>
     );
