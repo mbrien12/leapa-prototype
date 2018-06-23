@@ -4,13 +4,7 @@ import LandingPage from "./LandingPage";
 import Profile from "./Profile/Profile";
 import '../css/App.css';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { Route } from "react-router-dom";
 
 class App extends Component {
   render() {

@@ -1,0 +1,15 @@
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 10%;
+  justify-items: center;
+}
+
+.profile-left-one-third {
+  background-color: red;
+}
+
+.profile-right-two-thirds {
+  background-color: green;
+}
