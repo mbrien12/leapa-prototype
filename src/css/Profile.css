@@ -1,8 +1,29 @@
 
 .profile-container {
-  margin-top: 5%;
+  padding: 3%;
   display: grid;
-  grid-template-columns: 30% 60%;
-  grid-column-gap: 10%;
-  justify-items: center;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+}
+
+.profile-learning-track {
+  background-color: red;
+  width: 100%;
+}
+
+.add-track-button {
+ margin: 3% 3% 0 0;
+ text-align: right;
+}
+
+
+
+/* Responsive styles -----------------------------------*/
+@media (max-width: 1000px) {
+  .profile-container {
+    grid-template-columns: 100%;
+  }
+  .profile-learning-track {
+    margin-top: 5%;
+  }
 }

@@ -5,10 +5,12 @@ import '../../css/Profile.css';
 export default class Profile extends Component {
   render() {
     return (
-      <Button icon labelPosition='left'>
-      <Icon name='plus' />
-      Add learning track
-    </Button>
+      <div className="add-track-button">
+        <Button icon labelPosition='left'>
+          <Icon name='plus' />
+          Add learning track
+      </Button>
+    </div>
     );
   }
 }
