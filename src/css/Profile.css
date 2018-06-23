@@ -7,13 +7,16 @@
 }
 
 .profile-learning-track {
-  background-color: red;
   width: 100%;
 }
 
 .add-track-button {
  margin: 3% 3% 0 0;
  text-align: right;
+}
+
+.learning-card-container {
+  text-align: left;
 }
 
 
