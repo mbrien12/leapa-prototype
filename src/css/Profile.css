@@ -38,10 +38,13 @@
   color: #21ba45
 }
 
-.number {
-  color: #4183C4;
+.grey-number {
+  color: #767676;
 }
 
+.orange-number {
+  color: #f2711c;
+}
 
 /* Responsive styles -----------------------------------*/
 @media (max-width: 1000px) {
