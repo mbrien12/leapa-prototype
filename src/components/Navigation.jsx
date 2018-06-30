@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Icon, Menu, Segment } from "semantic-ui-react";
+import { Button, Icon, Menu, Segment } from "semantic-ui-react";
 
 export default class Navigation extends Component {
   state = { activeItem: 'home' }
@@ -13,7 +13,7 @@ export default class Navigation extends Component {
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-        <Icon name='lemon' size='big' />
+          <a href="/"> <Icon name='lemon' size='big' /></a>     
         <Menu.Menu position="right">
           <Menu.Item
             name='profile'

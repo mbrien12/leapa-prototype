@@ -9,7 +9,7 @@ export default class MakingCard extends Component {
   render() {
     return (
       <div className="learning-card-container">
-        <p>Showcase anything you've made, done or contributed to as part of learning HTML</p>
+        <p>Showcase anything you've made, done or contributed to as part of learning Javascript</p>
         <Card.Group itemsPerRow={4}>
           <Card image={"https://picsum.photos/200/300?image=0"} />
           <Card image={"https://picsum.photos/200/300?image=0"} />

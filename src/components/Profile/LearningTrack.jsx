@@ -16,7 +16,7 @@ export default class LearningTrack extends Component {
     
     return (
      <div className="profile-learning-track">
-      <Header as='h2' floated='left'> HTML </Header>
+      <Header as='h2' floated='left'> Javascript </Header>
       <Tab panes={panes} renderActiveOnly={false} />
      </div>
     );

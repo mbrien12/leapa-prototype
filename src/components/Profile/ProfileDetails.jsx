@@ -12,7 +12,7 @@ export default class ProfileDetails extends Component {
         <Card.Meta>
           <span className='date'>Marketing Manager in Bristol</span>
         </Card.Meta>
-        <Card.Description>Sarah is learning <a href="#">HTML</a>, <a href="#">CSS</a> and <a href="#">Digital Marketing</a></Card.Description>
+        <Card.Description>Sarah is learning <a href="#">Javascript</a>, <a href="#">CSS</a> and <a href="#">Digital Marketing</a></Card.Description>
       </Card.Content>
       <Card.Content extra>
       <Button as='div' labelPosition='right'>
