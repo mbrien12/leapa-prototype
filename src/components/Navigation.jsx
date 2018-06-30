@@ -13,7 +13,7 @@ export default class Navigation extends Component {
     return (
       <Segment inverted>
         <Menu inverted pointing secondary>
-          <a href="/"> <Icon name='lemon' size='big' /></a>     
+          <a href="/"> <Icon name='lemon' color="yellow" size='big'/></a>     
         <Menu.Menu position="right">
           <Menu.Item
             href='/profile'
