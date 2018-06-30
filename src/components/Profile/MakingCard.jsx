@@ -9,7 +9,7 @@ export default class MakingCard extends Component {
   render() {
     return (
       <div className="learning-card-container">
-        <p>Showcase anything you've made, done or contributed to as part of learning Javascript</p>
+        <p className="learning-card-description">Showcase anything you've made, done or contributed to as part of learning Javascript</p>
         <Card.Group itemsPerRow={3}>
 
         <Card>

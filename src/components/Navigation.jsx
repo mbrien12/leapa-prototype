@@ -16,6 +16,7 @@ export default class Navigation extends Component {
           <a href="/"> <Icon name='lemon' size='big' /></a>     
         <Menu.Menu position="right">
           <Menu.Item
+            href='/profile'
             name='profile'
             active={activeItem === 'profile'}
             onClick={this.handleItemClick}
