@@ -26,12 +26,16 @@
 
 
 .ui.active.dimmer {
-  opacity: 0.5 !important;
+  opacity: 0.2 !important;
 }
 
 .card-resource-title {
   color:grey;
   font-weight: lighter;
+}
+
+.green-number {
+  color: #21ba45
 }
 
 .number {
