@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Dimmer, Header, Icon, Image } from 'semantic-ui-react'
+import { Button, Card, Header, Icon, Image } from 'semantic-ui-react'
 import '../../css/Profile.css';
 
 // Refactor button out and use component once using props
