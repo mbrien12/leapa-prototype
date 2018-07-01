@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Button, Icon, Menu, Segment } from "semantic-ui-react";
+import { Icon, Menu, Segment } from "semantic-ui-react";
 
 export default class Navigation extends Component {
   state = { activeItem: 'home' }

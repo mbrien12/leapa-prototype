@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Dimmer, Header, Icon, Image } from 'semantic-ui-react'
+import { Button, Card, Header, Icon, Image } from 'semantic-ui-react'
 import '../../css/Profile.css';
 
 // Delete this component once refactored and using props. Only need one card component. Just for testing.

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Navigation from "./Navigation";
 import LandingPage from "./LandingPage";
 import Profile from "./Profile/Profile";
+import data from '../test-db.js'
 import '../css/App.css';
 
 import { Route } from "react-router-dom";
 
 class App extends Component {
   render() {
+    console.log(data);
     return (
       <div className="App">
       <Navigation/>
