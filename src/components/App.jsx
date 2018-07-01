@@ -29,7 +29,7 @@ class App extends Component {
       <Route
         path="/profile"
         render={() => (
-          <Profile/>
+          <Profile {...this.state.users.user1}/> // hard coded for now
         )}
       />
     </div>
