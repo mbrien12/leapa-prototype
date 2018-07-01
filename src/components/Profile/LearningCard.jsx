@@ -18,7 +18,7 @@ export default class LearningCard extends Component {
               <Header.Content><span className="grey-number">3</span> to do next</Header.Content>
             </Header>
           </Card.Content>
-            <Image src='https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png' />
+            <Image className="resource-image" src='https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png' />
           <Card.Content>
             <h3 className="card-resource-title">ES6 Codecademy</h3>
               <Card.Description>Introduction to ES6 syntax</Card.Description>
@@ -36,7 +36,8 @@ export default class LearningCard extends Component {
               <Header.Content><span className="orange-number">2</span> in progress</Header.Content>
               </Header>
             </Card.Content>
-              <Image src='https://i0.wp.com/blog.petehouston.com/wp-content/uploads/2018/03/blog-udacity.png?resize=640%2C363&ssl=1' />
+              <Image 
+              className="resource-image" src='https://i0.wp.com/blog.petehouston.com/wp-content/uploads/2018/03/blog-udacity.png?resize=640%2C363&ssl=1' />
             <Card.Content>
               <h3 className="card-resource-title">Udacity Intro to Javascript</h3>
                 <Card.Description>Fundamentals of the JS syntax</Card.Description>
@@ -55,7 +56,8 @@ export default class LearningCard extends Component {
             </Header>
           </Card.Content>
             <Image 
-            label={{ as: 'a', color: 'green', content: 'Most recent', icon: 'circle check outline', ribbon: true }} src='https://javascript30.com/images/JS3-social-share.png' />
+            className="resource-image" 
+            label={{ as: 'a', color: 'green', content: 'Most recent', icon: 'circle check outline', ribbon: true }} src='https://cdn.css-tricks.com/wp-content/uploads/2018/02/js-30-video.jpg' />
           <Card.Content>
             <h3 className="card-resource-title">Javascript 30</h3>
               <Card.Description>Vanilla JS by Wes Bos.</Card.Description>

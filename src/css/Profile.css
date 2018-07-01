@@ -6,8 +6,13 @@
   align-content: center;
 }
 
+.career-goal-text {
+  font-weight: lighter;
+}
+
 .profile-learning-track {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .add-track-button {
@@ -44,6 +49,16 @@
 
 .orange-number {
   color: #f2711c;
+}
+
+.faded-text {
+  color: #767676;
+  font-weight: lighter;
+}
+
+.resource-image {
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Responsive styles -----------------------------------*/

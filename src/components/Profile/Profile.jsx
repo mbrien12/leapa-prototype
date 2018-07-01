@@ -15,6 +15,7 @@ export default class Profile extends Component {
             </div>
             <div className="profile-right-two-thirds">
               <LearningTrack />
+              <LearningTrack />
             </div>
           </div>
       </div>

@@ -16,7 +16,7 @@ export default class MakingCard extends Component {
           <Card.Content>
             <Header as='h3'>
               <Icon name='clock outline' color="grey" />
-              <Header.Content>To do next</Header.Content>
+              <Header.Content><span className="faded-text">To do next</span></Header.Content>
             </Header>
           </Card.Content>
             <Button icon labelPosition='right'>
@@ -29,11 +29,16 @@ export default class MakingCard extends Component {
             <Card.Content>
               <Header as='h3'>
               <Icon name='book' color="orange" />
-              <Header.Content>In progress</Header.Content>
+              <Header.Content><span className="orange-number">1</span> in progress</Header.Content>
               </Header>
+              <Image src='' />
+              <Card.Content>
+                <h3 className="card-resource-title">Holiday poll app</h3>
+                  <Card.Description>Dynamic leaderboard to help plan group holidays</Card.Description>
+              </Card.Content>
             </Card.Content>
               <Button icon labelPosition='right'>
-              Add first project
+              Manage all
                 <Icon name='right arrow' />
               </Button>
           </Card>
@@ -42,7 +47,7 @@ export default class MakingCard extends Component {
           <Card.Content>
             <Header as='h3'>
               <Icon name='check circle outline' color="green" />
-              <Header.Content>Completed</Header.Content>
+              <Header.Content><span className="faded-text">Completed</span></Header.Content>
             </Header>
           </Card.Content>
             <Button icon labelPosition='right'>

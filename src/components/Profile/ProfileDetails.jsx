@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Icon, Image, Label } from 'semantic-ui-react'
+import { Button, Card, Header, Icon, Image, Label } from 'semantic-ui-react'
 import '../../css/Profile.css';
 
 export default class ProfileDetails extends Component {
@@ -13,6 +13,10 @@ export default class ProfileDetails extends Component {
           <span className='date'>Marketing Manager in Bristol</span>
         </Card.Meta>
         <Card.Description>Sarah is learning <a href="#">Javascript</a>, <a href="#">CSS</a> and <a href="#">Digital Marketing</a></Card.Description>
+        <Header as='h5'>
+        <Icon name='road' />
+        <Header.Content>Career goal: <span className="career-goal-text">Start a business</span></Header.Content>
+      </Header>
       </Card.Content>
       <Card.Content extra>
       <Button as='div' labelPosition='right'>
