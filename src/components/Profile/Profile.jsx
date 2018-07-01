@@ -13,6 +13,7 @@ export default class Profile extends Component {
             <div className="profile-left-one-third">
               <ProfileDetails 
               firstName = {this.props.firstName}
+              profileUrl = {this.props.profileUrl}
               location = {this.props.location}
               role = {this.props.currentRole}
               learning = {this.props.tracks}
