@@ -1,21 +1,21 @@
 const data = {
   users: {
     user1: {
-      userId: "mbrien",
-      firstName: "Michelle",
-      lastName: "Brien",
-      location: "London",
-      currentRole: "Product Developer",
-      careerGoal: "CTO",
-      currentWorkplace: "Decoded",
-      profileUrl: "https://avatars1.githubusercontent.com/u/22551831?s=460&v=4",
+      userId: "syeller",
+      firstName: "Sarah",
+      lastName: "Yeller",
+      location: "Bristol",
+      currentRole: "Marketing Manager",
+      careerGoal: "Start a business",
+      currentWorkplace: "OVO Energy",
+      profileUrl: "https://media1.popsugar-assets.com/files/thumbor/f6mR3MTC66MfnZFc0qGrgcnZ_fg/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/12/19/048/n/1922441/tmp_f17bIy_7aef35b1ab387138_k.jpg",
       goals: {
         year: "",
         sixMonths: "",
         threeMonths: "",
         oneMonth: "",
       },
-      followers: [],
+      followers: [22],
       following: [],
       tracks: {
         1: {
@@ -54,26 +54,51 @@ const data = {
           }
         },
         2: {
-          name: "React",
+          name: "CSS",
           category: "Software development",
           learning: {
             1: {
-              name: "React/Redux bootcamp",
-              description: "Intro to React",
-              source: "Le Wagon",
-              url: "https://www.lewagon.com/blog/introduction-to-react-js",
-              imageUrl: "",
-              status: "in progress",
+              name: "Mastering animations",
+              description: "Guide to animations and transitions",
+              source: "Udemy",
+              url: "https://www.udemy.com/css-mastering-animations/",
+              imageUrl: "https://udemy-images.udemy.com/course/240x135/1726950_a9e4_2.jpg",
+              status: "to do",
               completedDate: "",
               votesNum: 0,
             }
           },
           making: {
             1: {
-              name: "Holiday poll",
-              description: "Dynamic leaderboard to help plan group holidays",
-              url: "https://github.com/mbrien12/holiday-poll",
-              status: "in progress",
+              name: "",
+              description: "",
+              url: "",
+              status: "",
+              votesNum: 0, 
+            }
+          }
+        },
+        3: {
+          name: "Digital Marketing",
+          category: "Marketing",
+          learning: {
+            1: {
+              name: "Squared Online",
+              description: "Digital Marketing course",
+              source: "Google",
+              url: "https://www.wearesquared.com/",
+              imageUrl: "https://andrewleonwalker.co.uk/wp-content/uploads/2016/10/Squared-Online-grad-badge-square.png",
+              status: "Completed",
+              completedDate: "March 2016",
+              votesNum: 0,
+            }
+          },
+          making: {
+            1: {
+              name: "",
+              description: "",
+              url: "",
+              status: "",
               votesNum: 0, 
             }
           }

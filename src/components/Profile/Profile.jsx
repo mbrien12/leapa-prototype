@@ -11,7 +11,14 @@ export default class Profile extends Component {
         <AddTrackButton />
           <div className="profile-container">
             <div className="profile-left-one-third">
-              <ProfileDetails />
+              <ProfileDetails 
+              firstName = {this.props.firstName}
+              location = {this.props.location}
+              role = {this.props.currentRole}
+              learning = {this.props.tracks}
+              goal = {this.props.careerGoal}
+              followers = {this.props.followers}
+              />
             </div>
             <div className="profile-right-two-thirds">
               <LearningTrack />
