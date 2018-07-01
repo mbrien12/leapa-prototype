@@ -8,8 +8,15 @@ import '../css/App.css';
 import { Route } from "react-router-dom";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: data.users,
+    };
+  }
+
   render() {
-    console.log(data);
+    console.log(this.state);
     return (
       <div className="App">
       <Navigation/>
