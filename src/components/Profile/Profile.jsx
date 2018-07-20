@@ -22,7 +22,9 @@ export default class Profile extends Component {
               />
             </div>
             <div className="profile-right-two-thirds">
-              <LearningTrack />
+              <LearningTrack
+              tracks = {this.props.tracks}  
+              />
               <LearningTrack />
             </div>
           </div>

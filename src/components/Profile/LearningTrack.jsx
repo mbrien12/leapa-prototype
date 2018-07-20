@@ -13,12 +13,26 @@ export default class LearningTrack extends Component {
         pane: { key: 'tab2', content: (<MakingCard />) },
       },
     ]
-    
+
+    const tracks = this.props.tracks
+
+   
+
     return (
-     <div className="profile-learning-track">
-      <Header as='h2' floated='left'> Javascript </Header>
-      <Tab panes={panes} renderActiveOnly={false} />
-     </div>
+      <div>
+      {
+        Object.keys(tracks || {}).map(key => {
+          const track = tracks[key]
+          console.log(track);
+          return (
+            <div className="profile-learning-track">
+              <Header as='h2' floated='left'> {track.name} </Header>
+              <Tab panes={panes} renderActiveOnly={false} />
+           </div>
+          )
+        })
+      }
+      </div>
     );
   }
 }

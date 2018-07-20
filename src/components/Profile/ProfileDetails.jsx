@@ -25,10 +25,7 @@ export default class ProfileDetails extends Component {
             })
           }
           
-        
-          
-          
-     
+      
           </Card.Description>
           <Header as='h5'>
             <Icon name='road' />
