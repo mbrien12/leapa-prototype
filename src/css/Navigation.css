@@ -1,5 +1,5 @@
 .top-navigation {
-  background-color: #F3F6EF;
+  background-color: #4831b8;
   display: flex;
   padding: 10px;
   align-items: center;
@@ -8,6 +8,9 @@
 .logo-nav {
   width: 100px;
   flex-grow: 8;
+  font-size: 40px;
+  color: white;
+  margin-left: 20px;
 }
 .top-navigation ul {
   list-style-type: none;
@@ -19,12 +22,13 @@
   display: inline;
   font-size: 18px;
   padding: 20px;
+  margin: 10px;
 }
 
 .top-navigation li a {
-  color: black;
+  color: white;
 }
 
 .top-navigation li a:hover {
-  color: grey;
+  color: black;
 }
