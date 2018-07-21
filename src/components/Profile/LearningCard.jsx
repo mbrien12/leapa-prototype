@@ -8,7 +8,7 @@ export default class LearningCard extends Component {
   render() {
     return (
       <div className="learning-card-container">
-        <p className="learning-card-description">Track the tutorials, courses and conferences you're using to help you learn Javascript.</p>
+        <p className="learning-card-description">Track the tutorials, courses and conferences you're using to help you learn {this.props.track.name}.</p>
         <Card.Group itemsPerRow={3}>
 
         <Card>
