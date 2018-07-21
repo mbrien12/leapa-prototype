@@ -7,6 +7,11 @@ import '../../css/Profile.css';
 export default class LearningCard extends Component {
   render() {
     const track = this.props.track
+    const to_do_num = Object.keys(track.learning.to_do).length
+    const in_progress_num = Object.keys(track.learning.in_progress)
+    .length
+    const completed_num = Object.keys(track.learning.completed)
+    .length
 
     return (
       <div className="learning-card-container">
@@ -17,57 +22,82 @@ export default class LearningCard extends Component {
           <Card.Content>
             <Header as='h3'>
               <Icon name='clock outline' color="grey" />
-              <Header.Content><span className="grey-number">{Object.keys(track.learning.to_do).length}</span> to do next</Header.Content>
+              <Header.Content><span className="grey-number">{to_do_num}</span> to do next</Header.Content>
             </Header>
           </Card.Content>
-            <Image className="resource-image" src='https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png' />
-          <Card.Content>
-            <h3 className="card-resource-title">ES6 Codecademy</h3>
-              <Card.Description>Introduction to ES6 syntax</Card.Description>
-          </Card.Content>
-            <Button icon labelPosition='right'>
-            Manage all
+            {
+              // This can be refactored into another component
+              to_do_num >= 1 ?
+                <div>
+                  <Image className="resource-image" src={track.learning.to_do[1].imageUrl} />
+                  <Card.Content>
+                    <h3 className="card-resource-title">{track.learning.to_do[1].name}</h3>
+                    <Card.Description>{track.learning.to_do[1].description}</Card.Description>
+                  </Card.Content>
+                  <Button icon labelPosition='right'>
+                  Manage all
+                    <Icon name='right arrow' />
+                  </Button>
+                </div>
+               :  <Button icon labelPosition='right'>
+               Add first resource
               <Icon name='right arrow' />
             </Button>
+            } 
        </Card>
 
           <Card>
             <Card.Content>
               <Header as='h3'>
               <Icon name='book' color="orange" />
-              <Header.Content><span className="orange-number">{Object.keys(track.learning.in_progress).length}</span> in progress</Header.Content>
+              <Header.Content><span className="orange-number">{in_progress_num}</span> in progress</Header.Content>
               </Header>
             </Card.Content>
-              <Image 
-              className="resource-image" src='https://i0.wp.com/blog.petehouston.com/wp-content/uploads/2018/03/blog-udacity.png?resize=640%2C363&ssl=1' />
-            <Card.Content>
-              <h3 className="card-resource-title">Udacity Intro to Javascript</h3>
-                <Card.Description>Fundamentals of the JS syntax</Card.Description>
-            </Card.Content>
-              <Button icon labelPosition='right'>
-              Manage all
-                <Icon name='right arrow' />
-              </Button>
+            {
+              in_progress_num >= 1 ?
+                <div>
+                  <Image className="resource-image" src={track.learning.in_progress[1].imageUrl} />
+                  <Card.Content>
+                    <h3 className="card-resource-title">{track.learning.in_progress[1].name}</h3>
+                    <Card.Description>{track.learning.in_progress[1].description}</Card.Description>
+                  </Card.Content>
+                  <Button icon labelPosition='right'>
+                  Manage all
+                    <Icon name='right arrow' />
+                  </Button>
+                </div>
+               : <Button icon labelPosition='right'>
+               Add first resource
+              <Icon name='right arrow' />
+            </Button>
+            }
           </Card>
 
           <Card>
           <Card.Content>
             <Header as='h3'>
               <Icon name='check circle outline' color="green" />
-              <Header.Content><span className="green-number">{Object.keys(track.learning.completed).length}</span> Completed</Header.Content>
+              <Header.Content><span className="green-number">{completed_num}</span> Completed</Header.Content>
             </Header>
           </Card.Content>
-            <Image 
-            className="resource-image" 
-            label={{ as: 'a', color: 'green', content: 'Most recent', icon: 'circle check outline', ribbon: true }} src='https://cdn.css-tricks.com/wp-content/uploads/2018/02/js-30-video.jpg' />
-          <Card.Content>
-            <h3 className="card-resource-title">Javascript 30</h3>
-              <Card.Description>Vanilla JS by Wes Bos.</Card.Description>
-          </Card.Content>
-            <Button icon labelPosition='right'>
-            Manage all
-              <Icon name='right arrow' />
+          {
+            completed_num >= 1 ?
+              <div>
+                <Image className="resource-image" src={track.learning.completed[1].imageUrl} />
+                <Card.Content>
+                  <h3 className="card-resource-title">{track.learning.completed[1].name}</h3>
+                  <Card.Description>{track.learning.completed[1].description}</Card.Description>
+                </Card.Content>
+                <Button icon labelPosition='right'>
+                Manage all
+                  <Icon name='right arrow' />
+                </Button>
+              </div>
+             :  <Button icon labelPosition='right'>
+             Add first resource
+            <Icon name='right arrow' />
           </Button>
+          } 
         </Card>
         </Card.Group>
       </div>

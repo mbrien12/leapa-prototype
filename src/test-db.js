@@ -43,7 +43,7 @@ const data = {
                 description: "Basics of syntax",
                 source: "Udacity",
                 url: "https://eu.udacity.com/course/es6-javascript-improved--ud356",
-                imageUrl: "",
+                imageUrl: "https://i0.wp.com/blog.petehouston.com/wp-content/uploads/2018/03/blog-udacity.png?resize=640%2C363&ssl=1",
                 completedDate: "20/06/18",
                 votesNum: 10,
               }
