@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Button, Card, Header, Icon, Image } from 'semantic-ui-react'
 import '../../css/Profile.css';
+import styled from 'styled-components';
 
-// Refactor button out and use component once using props
+const ManageButton = styled(Button)`
+  width: 100%
+`
 
 export default class LearningCard extends Component {
   render() {
@@ -34,15 +37,16 @@ export default class LearningCard extends Component {
                     <h3 className="card-resource-title">{track.learning.to_do[1].name}</h3>
                     <Card.Description>{track.learning.to_do[1].description}</Card.Description>
                   </Card.Content>
-                  <Button icon labelPosition='right'>
+                  <ManageButton icon labelPosition='right'>
                   Manage all
-                    <Icon name='right arrow' />
-                  </Button>
+                  <Icon name='right arrow' />
+                </ManageButton>
                 </div>
-               :  <Button icon labelPosition='right'>
-               Add first resource
-              <Icon name='right arrow' />
-            </Button>
+               :  
+                <Button icon labelPosition='right'>
+                  Add first resource
+                  <Icon name='right arrow' />
+                </Button>
             } 
        </Card>
 
@@ -61,10 +65,10 @@ export default class LearningCard extends Component {
                     <h3 className="card-resource-title">{track.learning.in_progress[1].name}</h3>
                     <Card.Description>{track.learning.in_progress[1].description}</Card.Description>
                   </Card.Content>
-                  <Button icon labelPosition='right'>
+                  <ManageButton icon labelPosition='right'>
                   Manage all
                     <Icon name='right arrow' />
-                  </Button>
+                  </ManageButton>
                 </div>
                : <Button icon labelPosition='right'>
                Add first resource
@@ -88,10 +92,10 @@ export default class LearningCard extends Component {
                   <h3 className="card-resource-title">{track.learning.completed[1].name}</h3>
                   <Card.Description>{track.learning.completed[1].description}</Card.Description>
                 </Card.Content>
-                <Button icon labelPosition='right'>
+                <ManageButton icon labelPosition='right'>
                 Manage all
                   <Icon name='right arrow' />
-                </Button>
+                </ManageButton>
               </div>
              :  <Button icon labelPosition='right'>
              Add first resource

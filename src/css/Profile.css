@@ -29,6 +29,9 @@
   margin-bottom: 40px;
 }
 
+.button-width {
+  width: 100%;
+}
 
 .ui.active.dimmer {
   opacity: 0.2 !important;
