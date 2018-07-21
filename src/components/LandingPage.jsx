@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import '../css/LandingPage.css'
+
 
 export default class LandingPage extends Component {
   render() {
     return (
-     <h1>I'm a LANDING page</h1>
+     <div className="banner-cover">
+     </div>
     );
   }
 }

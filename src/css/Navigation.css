@@ -1,0 +1,30 @@
+.top-navigation {
+  background-color: #F3F6EF;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo-nav {
+  width: 100px;
+  flex-grow: 8;
+}
+.top-navigation ul {
+  list-style-type: none;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.top-navigation li {
+  display: inline;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.top-navigation li a {
+  color: black;
+}
+
+.top-navigation li a:hover {
+  color: grey;
+}
