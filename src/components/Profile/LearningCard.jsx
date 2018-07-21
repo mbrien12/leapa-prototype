@@ -6,9 +6,13 @@ import '../../css/Profile.css';
 
 export default class LearningCard extends Component {
   render() {
+    const track = this.props.track
+    console.log(track)
+    // console.log(Object.keys(track.learning.in_progress).length)
+
     return (
       <div className="learning-card-container">
-        <p className="learning-card-description">Track the tutorials, courses and conferences you're using to help you learn {this.props.track.name}.</p>
+        <p className="learning-card-description">Track the tutorials, courses and resources you're using to help you learn {this.props.track.name}.</p>
         <Card.Group itemsPerRow={3}>
 
         <Card>

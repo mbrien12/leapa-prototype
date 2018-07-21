@@ -1,3 +1,4 @@
+// Need to refactor MAKING and USER2 to have to_do, in_progress and completed
 const data = {
   users: {
     user1: {
@@ -22,25 +23,30 @@ const data = {
           name: "Javascript",
           category: "Software development",
           learning: {
-            1: {
-              name: "Javascript 30",
-              description: "Wes Bos vanilla JS",
-              source: "Wes Bos",
-              url: "https://javascript30.com/",
-              imageUrl: "https://javascript30.com/images/JS3-social-share.png",
-              status: "in progress",
-              completedDate: "",
-              votesNum: 3,
+            to_do: {
+
             },
-            2: {
-              name: "Beginners guide to ES6",
-              description: "Basics of syntax",
-              source: "Udacity",
-              url: "https://eu.udacity.com/course/es6-javascript-improved--ud356",
-              imageUrl: "",
-              status: "completed",
-              completedDate: "20/06/18",
-              votesNum: 10,
+            in_progress: {
+              1: {
+                name: "Javascript 30",
+                description: "Wes Bos vanilla JS",
+                source: "Wes Bos",
+                url: "https://javascript30.com/",
+                imageUrl: "https://javascript30.com/images/JS3-social-share.png",
+                completedDate: "",
+                votesNum: 3,
+              }      
+            },
+            completed: {
+              1: {
+                name: "Beginners guide to ES6",
+                description: "Basics of syntax",
+                source: "Udacity",
+                url: "https://eu.udacity.com/course/es6-javascript-improved--ud356",
+                imageUrl: "",
+                completedDate: "20/06/18",
+                votesNum: 10,
+              }
             }
           },
           making: {
@@ -57,16 +63,22 @@ const data = {
           name: "CSS",
           category: "Software development",
           learning: {
-            1: {
-              name: "Mastering animations",
-              description: "Guide to animations and transitions",
-              source: "Udemy",
-              url: "https://www.udemy.com/css-mastering-animations/",
-              imageUrl: "https://udemy-images.udemy.com/course/240x135/1726950_a9e4_2.jpg",
-              status: "to do",
-              completedDate: "",
-              votesNum: 0,
-            }
+            to_do: {
+              1: {
+                name: "Mastering animations",
+                description: "Guide to animations and transitions",
+                source: "Udemy",
+                url: "https://www.udemy.com/css-mastering-animations/",
+                imageUrl: "https://udemy-images.udemy.com/course/240x135/1726950_a9e4_2.jpg",
+                status: "to_do",
+                completedDate: "",
+                votesNum: 0,
+              }
+            },
+            in_progress: {
+            },
+            completed: {
+            },
           },
           making: {
             1: {
@@ -82,15 +94,21 @@ const data = {
           name: "Digital Marketing",
           category: "Marketing",
           learning: {
-            1: {
-              name: "Squared Online",
-              description: "Digital Marketing course",
-              source: "Google",
-              url: "https://www.wearesquared.com/",
-              imageUrl: "https://andrewleonwalker.co.uk/wp-content/uploads/2016/10/Squared-Online-grad-badge-square.png",
-              status: "Completed",
-              completedDate: "March 2016",
-              votesNum: 0,
+            to_do: {
+            },
+            in_progress: {
+            },
+            completed: {
+              1: {
+                name: "Squared Online",
+                description: "Digital Marketing course",
+                source: "Google",
+                url: "https://www.wearesquared.com/",
+                imageUrl: "https://andrewleonwalker.co.uk/wp-content/uploads/2016/10/Squared-Online-grad-badge-square.png",
+                status: "Completed",
+                completedDate: "March 2016",
+                votesNum: 0,
+              }
             }
           },
           making: {
