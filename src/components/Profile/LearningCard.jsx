@@ -7,8 +7,6 @@ import '../../css/Profile.css';
 export default class LearningCard extends Component {
   render() {
     const track = this.props.track
-    console.log(track)
-    // console.log(Object.keys(track.learning.in_progress).length)
 
     return (
       <div className="learning-card-container">
@@ -19,7 +17,7 @@ export default class LearningCard extends Component {
           <Card.Content>
             <Header as='h3'>
               <Icon name='clock outline' color="grey" />
-              <Header.Content><span className="grey-number">3</span> to do next</Header.Content>
+              <Header.Content><span className="grey-number">{Object.keys(track.learning.to_do).length}</span> to do next</Header.Content>
             </Header>
           </Card.Content>
             <Image className="resource-image" src='https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png' />
@@ -37,7 +35,7 @@ export default class LearningCard extends Component {
             <Card.Content>
               <Header as='h3'>
               <Icon name='book' color="orange" />
-              <Header.Content><span className="orange-number">2</span> in progress</Header.Content>
+              <Header.Content><span className="orange-number">{Object.keys(track.learning.in_progress).length}</span> in progress</Header.Content>
               </Header>
             </Card.Content>
               <Image 
@@ -56,7 +54,7 @@ export default class LearningCard extends Component {
           <Card.Content>
             <Header as='h3'>
               <Icon name='check circle outline' color="green" />
-              <Header.Content><span className="green-number">5</span> Completed</Header.Content>
+              <Header.Content><span className="green-number">{Object.keys(track.learning.completed).length}</span> Completed</Header.Content>
             </Header>
           </Card.Content>
             <Image 
