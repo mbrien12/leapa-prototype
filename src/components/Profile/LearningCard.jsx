@@ -4,7 +4,11 @@ import '../../css/Profile.css';
 import styled from 'styled-components';
 
 const ManageButton = styled(Button)`
-  width: 100%
+  width: 100%;
+`
+
+const DescriptionContainer = styled.div`
+  margin: 30px;
 `
 
 export default class LearningCard extends Component {
@@ -33,10 +37,10 @@ export default class LearningCard extends Component {
               to_do_num >= 1 ?
                 <div>
                   <Image className="resource-image" src={track.learning.to_do[1].imageUrl} />
-                  <Card.Content>
+                  <DescriptionContainer className="center aligned content">
                     <h3 className="card-resource-title">{track.learning.to_do[1].name}</h3>
                     <Card.Description>{track.learning.to_do[1].description}</Card.Description>
-                  </Card.Content>
+                  </DescriptionContainer>
                   <ManageButton icon labelPosition='right'>
                   Manage all
                   <Icon name='right arrow' />
@@ -61,10 +65,10 @@ export default class LearningCard extends Component {
               in_progress_num >= 1 ?
                 <div>
                   <Image className="resource-image" src={track.learning.in_progress[1].imageUrl} />
-                  <Card.Content>
+                  <DescriptionContainer className="center aligned content">
                     <h3 className="card-resource-title">{track.learning.in_progress[1].name}</h3>
                     <Card.Description>{track.learning.in_progress[1].description}</Card.Description>
-                  </Card.Content>
+                  </DescriptionContainer>
                   <ManageButton icon labelPosition='right'>
                   Manage all
                     <Icon name='right arrow' />
@@ -88,10 +92,10 @@ export default class LearningCard extends Component {
             completed_num >= 1 ?
               <div>
                 <Image className="resource-image" src={track.learning.completed[1].imageUrl} />
-                <Card.Content>
+                <DescriptionContainer className="center aligned content">
                   <h3 className="card-resource-title">{track.learning.completed[1].name}</h3>
                   <Card.Description>{track.learning.completed[1].description}</Card.Description>
-                </Card.Content>
+                </DescriptionContainer>
                 <ManageButton icon labelPosition='right'>
                 Manage all
                   <Icon name='right arrow' />
