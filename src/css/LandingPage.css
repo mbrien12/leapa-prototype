@@ -1,6 +1,17 @@
 .banner-cover {
   background-color: #4831b8;
   height: 80vh;
+  color: white;
+}
+
+.white {
+  width: 20%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.image-test {
+  height: 20%;
 }
 
 .homepage-second-row {
