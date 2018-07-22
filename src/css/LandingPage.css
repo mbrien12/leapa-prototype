@@ -4,14 +4,27 @@
   color: white;
 }
 
-.white {
-  width: 20%;
-  margin: 0 auto;
-  background-color: white;
+.banner-content {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.image-test {
-  height: 20%;
+.banner-content-left {
+  align-self: center;
+  padding: 150px;
+}
+
+.banner-content-left h1 {
+  font-size: 2.5em;
+}
+
+.banner-content-left p {
+  font-size: 1.3em;
+}
+
+.banner-image {
+  height: 500px;
 }
 
 .homepage-second-row {

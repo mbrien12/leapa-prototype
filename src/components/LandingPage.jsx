@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../css/LandingPage.css'
+import { Button } from 'semantic-ui-react'
 
 
 export default class LandingPage extends Component {
@@ -7,8 +8,15 @@ export default class LandingPage extends Component {
     return (
      <div>
         <div className="banner-cover">
-          <div className="white">
-          <img className="image-test"src="https://image.ibb.co/fnHTPJ/Leapa_learning_track.png" alt=""/>
+        <div className="banner-content">
+          <div className="banner-content-left">
+            <h1>Your learning passport</h1>
+            <p>Create a record of your personal learning progress and connect with others learning the same.</p>
+            <Button inverted>Join today</Button>
+          </div>
+          <div className="banner-content-right">
+            <img className="banner-image"src="https://image.ibb.co/fnHTPJ/Leapa_learning_track.png" alt=""/>
+          </div>
           </div>
         </div>
         <div className="homepage-second-row">
