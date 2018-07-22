@@ -21,6 +21,7 @@ export default class LandingPage extends Component {
         </div>
         <div className="homepage-second-row">
           <h2>The overall vision...</h2>
+          <p>Blah blah blah blah.....</p>
         </div>
      </div>
     );
